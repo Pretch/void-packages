@@ -21,6 +21,8 @@ license="Apache-2.0"
 homepage="http://tools.android.com/"
 nopie=yes
 nostrip=yes
+noverifyrdeps=yes
+depends="openjdk-jre libgcc libXtst libXrender libXi libXext libX11 glibc freetype alsa-lib"
 
 do_install() {
 	unzip android-studio-ide-${_studio_build}-linux.zip
